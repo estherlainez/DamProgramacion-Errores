@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class DivisionEntreCerosSinManejo {
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
 
+	
 		Scanner teclado=new Scanner(System.in);
 		System.out.println("Introduzc a un numero entero");
 		int num=teclado.nextInt();
@@ -12,6 +14,7 @@ public class DivisionEntreCerosSinManejo {
 		int den=teclado.nextInt();
 		int result=cociente(num,den);
 		System.out.println("resultado: "+result);
+		
 
 		}
 
