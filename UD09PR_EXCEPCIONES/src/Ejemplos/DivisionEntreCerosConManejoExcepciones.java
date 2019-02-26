@@ -16,10 +16,15 @@ public class DivisionEntreCerosConManejoExcepciones {
 			int result=cociente(num,den);
 			System.out.println("resultado: "+result);
 		}catch (InputMismatchException e) {
-			System.out.println("has introducido un String en vez de un int"+e.getMessage());
+			System.out.println("has introducido un String en vez de un int. "
+					+ "Estoy tratando la excepcion InputMismatchException");
 		}
+		catch (ArithmeticException e) {
+		System.out.println("no se puede dividir por cero ");
+	}
+		
 		teclado.nextLine();
-		System.out.println("Introduzca los valores del array");
+		try {
 		int [] array = new int[5];
 		System.out.println("Introduzca los valores del array");
 		array[0]=teclado.nextInt();
@@ -31,10 +36,15 @@ public class DivisionEntreCerosConManejoExcepciones {
 		array[3]=teclado.nextInt();
 		System.out.println("Introduzca los valores del array");
 		array[4]=teclado.nextInt();
+		System.out.println("Introduzca los valores del array");
+		array[5]=teclado.nextInt();
+		}catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("no caben mas numeros por el tamaño del array,este campo no entra ");
+		}
 
 		}
 
-	public static int cociente(int numerador,int denominador) {
+	public static int cociente(int numerador,int denominador) throws ArithmeticException{
 		return numerador/denominador;
 	}
 }
