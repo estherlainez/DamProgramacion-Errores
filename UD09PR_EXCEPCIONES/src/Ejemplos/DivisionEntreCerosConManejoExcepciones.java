@@ -21,7 +21,7 @@ public class DivisionEntreCerosConManejoExcepciones {
 		}
 		catch (ArithmeticException e) {
 		System.out.println("no se puede dividir por cero ");
-	}
+		}
 		
 		teclado.nextLine();
 		try {
@@ -39,7 +39,7 @@ public class DivisionEntreCerosConManejoExcepciones {
 		System.out.println("Introduzca los valores del array");
 		array[5]=teclado.nextInt();
 		}catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("no caben mas numeros por el tamaño del array,este campo no entra ");
+			System.out.println("no caben mas numeros,te has salido de rango,este campo no entra ");
 		}
 
 		}
