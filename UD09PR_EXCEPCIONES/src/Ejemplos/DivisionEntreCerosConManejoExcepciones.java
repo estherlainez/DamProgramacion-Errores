@@ -11,7 +11,7 @@ public class DivisionEntreCerosConManejoExcepciones {
 		
 		try {
 			int num=teclado.nextInt();
-			System.out.println("Introduzc a un denominador entero");
+			System.out.println("Introduzca un denominador entero");
 			int den=teclado.nextInt();
 			int result=cociente(num,den);
 			System.out.println("resultado: "+result);
@@ -20,24 +20,24 @@ public class DivisionEntreCerosConManejoExcepciones {
 					+ "Estoy tratando la excepcion InputMismatchException");
 		}
 		catch (ArithmeticException e) {
-		System.out.println("no se puede dividir por cero ");
+			System.out.println("no se puede dividir por cero ");
 		}
 		
 		teclado.nextLine();
 		try {
-		int [] array = new int[5];
-		System.out.println("Introduzca los valores del array");
-		array[0]=teclado.nextInt();
-		System.out.println("Introduzca los valores del array");
-		array[1]=teclado.nextInt();
-		System.out.println("Introduzca los valores del array");
-		array[2]=teclado.nextInt();
-		System.out.println("Introduzca los valores del array");
-		array[3]=teclado.nextInt();
-		System.out.println("Introduzca los valores del array");
-		array[4]=teclado.nextInt();
-		System.out.println("Introduzca los valores del array");
-		array[5]=teclado.nextInt();
+			int [] array = new int[5];
+			System.out.println("Introduzca los valores del array");
+			array[0]=teclado.nextInt();
+			System.out.println("Introduzca los valores del array");
+			array[1]=teclado.nextInt();
+			System.out.println("Introduzca los valores del array");
+			array[2]=teclado.nextInt();
+			System.out.println("Introduzca los valores del array");
+			array[3]=teclado.nextInt();
+			System.out.println("Introduzca los valores del array");
+			array[4]=teclado.nextInt();
+			System.out.println("Introduzca los valores del array");
+			array[5]=teclado.nextInt();
 		}catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("no caben mas numeros,te has salido de rango,este campo no entra ");
 		}
